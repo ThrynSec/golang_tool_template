@@ -36,7 +36,7 @@ func main() {
 
 	flag.Parse()
 
-	// OPTIONAL - No argument catcher
+	// OPTIONAL - No flag catcher
 	if (*flag1 == "") && (*flag2 == "") {
 		fmt.Printf("Error, need at least an argument")
 	}
