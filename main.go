@@ -39,6 +39,7 @@ func main() {
 	// OPTIONAL - No flag catcher
 	if (*flag1 == "") && (*flag2 == "") {
 		fmt.Printf("Error, need at least an argument")
+		os.Exit(0)
 	}
 
 	//goRoutines to launch. Replace numberOfGoroutines with an int or a var that represent the number of goroutines you want to asynchronously launch
