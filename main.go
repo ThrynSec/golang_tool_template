@@ -30,9 +30,10 @@ func main() {
 	//flags to be used
 	//Example : toolname -f to flag1
 	//By default, toolanme -h will print list of flags with description
+	//the "" part is the default value. You can put whatever you like.
 
-	flag1 := flag.String("f", "default", "flag description for -h")
-	flag2 := flag.String("t", "default", "flag description for -h")
+	flag1 := flag.String("f", "", "flag description for -h")
+	flag2 := flag.String("t", "", "flag description for -h")
 
 	flag.Parse()
 
